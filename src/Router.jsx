@@ -1,12 +1,13 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from './Pages/Home'
+import Home from './pages/Home'
+import TourFrame from './components/TourFrame'
 
 const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<>about</>} />
+        <Route path="/tours/main" element={<TourFrame />} />
       </Routes>
     </BrowserRouter>
   )
