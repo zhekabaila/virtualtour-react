@@ -39,7 +39,7 @@ const Home = () => {
   return (
     <Container>
       <section id="hero">
-        <div className="flex items-center justify-center bg-[url('bangunan_utama.png')] bg-center bg-no-repeat bg-cover h-screen">
+        <div className="flex items-center justify-center bg-[url('/images/bangunan_utama.png')] bg-center bg-no-repeat bg-cover h-screen">
           <div className="flex flex-col items-center justify-center">
             <h2 className="text-3xl text-white font-semibold">
               Stemanika Virtual Tour
@@ -235,7 +235,7 @@ const Home = () => {
       </section>
 
       <section id="tour">
-        <div className="flex items-center justify-center bg-[url('bangunan_utama.png')] bg-center bg-no-repeat bg-cover h-[600px]">
+        <div className="flex items-center justify-center bg-[url('/images/bangunan_utama.png')] bg-center bg-no-repeat bg-cover h-[600px]">
           <div className="flex flex-col items-center justify-center">
             <h2 className="text-3xl text-white font-semibold">
               Start your virtual tour now!
