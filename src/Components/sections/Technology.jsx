@@ -9,7 +9,7 @@ const Technology = () => {
         Virtual Tour :
       </p>
 
-      <ul className="flex items-center gap-x-24 justify-center mt-20">
+      <ul className="grid grid-cols-3 lg:flex lg:items-center gap-8 lg:gap-x-24 justify-center mt-10 lg:mt-20">
         {technology.map((item, index) => (
           <li key={index}>
             <img
@@ -17,8 +17,8 @@ const Technology = () => {
               alt={item.title}
               className={`${
                 item.title === 'Tailwindcss'
-                  ? 'aspect-video w-20 h-auto'
-                  : 'aspect-square size-w-20'
+                  ? 'aspect-video w-8 lg:w-20 h-auto'
+                  : 'aspect-square size-8 lg:size-20'
               }`}
             />
           </li>

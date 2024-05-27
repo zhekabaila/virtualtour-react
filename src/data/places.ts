@@ -1,0 +1,86 @@
+export const places = [
+  {
+    id: 1,
+    title: 'Gedung Utama',
+    image: 'places/gedung_utama.jpg',
+    link: '/tours/main',
+  },
+  {
+    id: 2,
+    title: 'Masjid',
+    image: 'places/masjid.jpg',
+    link: '/tours/main',
+  },
+  {
+    id: 3,
+    title: 'Ruang Guru',
+    image: 'places/ruang_guru.jpg',
+    link: '/tours/main',
+  },
+  {
+    id: 4,
+    title: 'Perpus',
+    image: 'places/perpus.jpg',
+    link: '/tours/main',
+  },
+  {
+    id: 5,
+    title: 'Kantin',
+    image: 'places/kantin.jpg',
+    link: '/tours/main',
+  },
+  {
+    id: 6,
+    title: 'Lapang Basket',
+    image: 'places/lapang_basket.jpg',
+    link: '/tours/main',
+  },
+  {
+    id: 7,
+    title: 'Parkiran',
+    image: 'places/parkiran.jpg',
+    link: '/tours/main',
+  },
+  {
+    id: 8,
+    title: 'DPIB',
+    image: 'places/dpib.jpg',
+    link: '/tours/main',
+  },
+  {
+    id: 9,
+    title: 'TKL',
+    image: 'places/tkl.jpg',
+    link: '/tours/main',
+  },
+  {
+    id: 10,
+    title: 'TPM',
+    image: 'places/tpm.jpg',
+    link: '/tours/main',
+  },
+  {
+    id: 11,
+    title: 'RPL',
+    image: 'places/rpl.jpg',
+    link: '/tours/main',
+  },
+  {
+    id: 12,
+    title: 'TKJ',
+    image: 'places/tkj.jpg',
+    link: '/tours/main',
+  },
+  {
+    id: 13,
+    title: 'TKR',
+    image: 'places/tkr.jpg',
+    link: '/tours/main',
+  },
+  {
+    id: 14,
+    title: 'TSM',
+    image: 'places/tsm.jpg',
+    link: '/tours/main',
+  },
+]
