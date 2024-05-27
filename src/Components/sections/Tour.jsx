@@ -8,12 +8,12 @@ const Tour = () => {
       </section>
 
       <section id="tour">
-        <div className="flex items-center justify-center bg-[url('/images/bangunan_utama.png')] bg-center bg-no-repeat bg-cover h-[600px] px-4 lg:px-0">
-          <div className="flex flex-col items-center justify-center">
+        <div className="relative flex items-center justify-center bg-[url('/images/nature.jpg')] bg-center bg-no-repeat bg-cover h-[300px] px-4 lg:px-0 ">
+          <div className="flex flex-col items-center justify-center bg-black/40 w-full h-full">
             <h2 className="text-center text-xl lg:text-3xl text-white font-semibold">
               Start your virtual tour now!
             </h2>
-            <p className="text-center text-xs lg:text-base text-white font-thin mt-2">
+            <p className="text-center text-xs lg:text-base text-white font-extralight mt-3">
               Mulai tur virtual-mu untuk menjelajahi SMKN 1 Majalengka dengan
               klik tombol di bawah ini.
             </p>

@@ -3,8 +3,23 @@ import 'swiper/css/navigation'
 import { Navigation, Autoplay } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { places } from '../../data/places'
+import { useState } from 'react'
+import Place from '../Modals/Place'
 
 const Places = () => {
+  const [isOpen, setIsOpen] = useState(false)
+  const [selectedItem, setSelectedItem] = useState(null)
+
+  function open(item) {
+    setSelectedItem(item)
+    setIsOpen(true)
+  }
+
+  function close() {
+    setIsOpen(false)
+    setSelectedItem(null)
+  }
+
   return (
     <section id="places" className="px-4 py-24 lg:p-32 bg-primary">
       <h2 className="text-2xl text-white font-semibold">Places</h2>
@@ -29,7 +44,7 @@ const Places = () => {
             key={index}
             className="w-[220px] h-[294.5px] relative group overflow-hidden rounded-xl"
           >
-            <a href={item.link}>
+            <button type="button" onClick={() => open(item)}>
               <div className="flex items-end justify-center bg-transparent group-hover:bg-black group-hover:bg-opacity-40 size-full absolute rounded-xl py-12 transition-all ease-in-out duration-300 z-30">
                 <p className="text-transparent group-hover:text-white text-xl font-bold transition-all ease-in-out duration-300">
                   {item.title}
@@ -42,10 +57,22 @@ const Places = () => {
                   className="object-center object-cover rounded-xl group-hover:scale-110 transition-all ease-in-out duration-300"
                 />
               </div>
-            </a>
+            </button>
           </SwiperSlide>
         ))}
       </Swiper>
+
+      {selectedItem && (
+        <Place
+          title={selectedItem.title}
+          description={selectedItem.description}
+          link={selectedItem.link}
+          image={selectedItem.image}
+          isOpen={isOpen}
+          open={open}
+          close={close}
+        />
+      )}
     </section>
   )
 }

@@ -6,7 +6,7 @@ const Hero = () => {
           <h2 className="text-center text-xl lg:text-3xl text-white font-semibold">
             Stemanika Virtual Tour
           </h2>
-          <p className="text-center text-xs lg:text-base text-white font-extralight lg:font-thin mt-2">
+          <p className="text-center text-xs lg:text-base text-white font-extralight mt-2">
             Are you ready for the fun virtual tour experience?
           </p>
           <a href="/tours/main">
