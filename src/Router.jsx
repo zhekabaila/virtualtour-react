@@ -1,6 +1,6 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
-import TourFrame from './components/TourFrame'
+import TourFrame from './pages/TourFrame'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 const Router = () => {
   return (

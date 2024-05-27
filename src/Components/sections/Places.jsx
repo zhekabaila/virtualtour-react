@@ -9,14 +9,21 @@ const Places = () => {
 
     // Map over the array to render the components
     return cards.map((_, index) => (
-      <SwiperSlide key={index} className="w-[220px] h-[294.5px]">
-        <a href="/tours/main">
-          <img
-            src="/images/stemanika_card.png"
-            alt="card"
-            className="object-center object-cover"
-          />
-        </a>
+      <SwiperSlide key={index} className="w-[220px] h-[294.5px] relative group">
+        <>
+          <div className="flex items-end justify-center bg-transparent group-hover:bg-black group-hover:bg-opacity-40 size-full absolute rounded-xl py-12 transition-all ease-in-out duration-300">
+            <p className="text-transparent group-hover:text-white text-xl font-bold transition-all ease-in-out duration-300">
+              Gedung Utama
+            </p>
+          </div>
+          <a href="/tours/main">
+            <img
+              src="/images/stemanika_card.png"
+              alt="card"
+              className="object-center object-cover"
+            />
+          </a>
+        </>
       </SwiperSlide>
     ))
   }
