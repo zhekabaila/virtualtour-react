@@ -1,16 +1,7 @@
-import Home from './Pages/Home'
-import TourFrame from './Pages/TourFrame'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import Router from './Router'
 
 const App = () => {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/tours/main" element={<TourFrame />} />
-      </Routes>
-    </Router>
-  )
+  return <Router />
 }
 
 export default App

@@ -1,5 +1,4 @@
 import Home from './Pages/Home'
-import TourFrame from './Pages/TourFrame'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 const Router = () => {
@@ -7,7 +6,6 @@ const Router = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/tours/main" element={<TourFrame />} />
       </Routes>
     </BrowserRouter>
   )

@@ -6,7 +6,6 @@ import {
   TransitionChild,
 } from '@headlessui/react'
 import PropTypes from 'prop-types'
-import React from 'react'
 
 export default function Place({
   title,
@@ -65,7 +64,7 @@ export default function Place({
                         className="mt-6 text-base text-black"
                         dangerouslySetInnerHTML={{ __html: description }}
                       />
-                      <a href={link} className="flex mt-10">
+                      <a href={link} target="_blank" className="flex mt-10">
                         <p className="px-16 py-1.5 rounded-full bg-primary text-white text-base font-semibold">
                           JELAJAHI
                         </p>
