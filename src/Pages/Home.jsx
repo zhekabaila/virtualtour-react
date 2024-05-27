@@ -1,9 +1,9 @@
-import Tour from '../components/sections/Tour'
-import Hero from '../components/sections/Hero'
-import Container from '../components/Container'
-import About from '../components/sections/About'
-import Places from '../components/sections/Places'
-import Technology from '../components/sections/Technology'
+import Tour from '../Components/sections/Tour'
+import Hero from '../Components/sections/Hero'
+import Container from '../Components/Container'
+import About from '../Components/sections/About'
+import Places from '../Components/sections/Places'
+import Technology from '../Components/sections/Technology'
 
 const Home = () => {
   return (

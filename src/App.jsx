@@ -1,5 +1,5 @@
-import Home from './pages/Home'
-import TourFrame from './pages/TourFrame'
+import Home from './Pages/Home'
+import TourFrame from './Pages/TourFrame'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 const App = () => {
