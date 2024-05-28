@@ -10008,14 +10008,12 @@
         c.call(this)
         this.aO = this.Jl = m
       })
-    f.v('AdjacentPanorama', a)
-      .A('Object')
-      .H({
-        yaw: 'number',
-        distance: 'number',
-        panorama: 'Panorama',
-        backwardYaw: 'number',
-      })
+    f.v('AdjacentPanorama', a).A('Object').H({
+      yaw: 'number',
+      distance: 'number',
+      panorama: 'Panorama',
+      backwardYaw: 'number',
+    })
     a.prototype.o0 = function () {
       if (this.Jl === m) {
         for (this.Jl = this.XU() - this.get('yaw'); 180 < this.Jl; )
@@ -10113,21 +10111,19 @@
       this.set('enabled', p)
       this.set('selected', A)
     })
-    c.v('HotspotMapOverlay', a)
-      .A('MapOverlay')
-      .H({
-        areas: 'array[HotspotMapOverlayArea]',
-        enabled: 'bool',
-        image: 'HotspotMapOverlayImage',
-        map: 'HotspotMapOverlayMap',
-        rollOverDisplay: 'bool',
-        rollOverImage: 'HotspotMapOverlayImage',
-        rollOverMap: 'HotspotMapOverlayMap',
-        selectedImage: 'HotspotMapOverlayImage',
-        selectedMap: 'HotspotMapOverlayMap',
-        selected: 'bool',
-        useHandCursor: 'bool',
-      })
+    c.v('HotspotMapOverlay', a).A('MapOverlay').H({
+      areas: 'array[HotspotMapOverlayArea]',
+      enabled: 'bool',
+      image: 'HotspotMapOverlayImage',
+      map: 'HotspotMapOverlayMap',
+      rollOverDisplay: 'bool',
+      rollOverImage: 'HotspotMapOverlayImage',
+      rollOverMap: 'HotspotMapOverlayMap',
+      selectedImage: 'HotspotMapOverlayImage',
+      selectedMap: 'HotspotMapOverlayMap',
+      selected: 'bool',
+      useHandCursor: 'bool',
+    })
     a.prototype.getItem = function () {
       if (this.D === m) {
         var a = this.get('image')
@@ -19914,18 +19910,16 @@
     a = a.extend(b, function () {
       b.call(this)
     })
-    c.v('CloseButton', a)
-      .A('BaseButton')
-      .H({
-        iconColor: 'color',
-        iconLineWidth: 'number',
-        rollOverIconColor: 'color',
-        rollOverIconLineWidth: 'number',
-        pressedIconColor: 'color',
-        pressedIconLineWidth: 'number',
-        pressedRollOverIconColor: 'color',
-        pressedRollOverIconLineWidth: 'number',
-      })
+    c.v('CloseButton', a).A('BaseButton').H({
+      iconColor: 'color',
+      iconLineWidth: 'number',
+      rollOverIconColor: 'color',
+      rollOverIconLineWidth: 'number',
+      pressedIconColor: 'color',
+      pressedIconLineWidth: 'number',
+      pressedRollOverIconColor: 'color',
+      pressedRollOverIconLineWidth: 'number',
+    })
     return a
   })
   define('hf', ['cA', 'gP', 'iy', 'cY'], function (a, b, c, f) {
@@ -20019,18 +20013,16 @@
       a = b.extend(f, function () {
         f.call(this)
       })
-    c.v('CubicPanoramaFrame', a)
-      .A('PanoramaFrame')
-      .H({
-        cube: 'ImageResource',
-        stereoCube: 'ImageResource',
-        front: 'ImageResource',
-        left: 'ImageResource',
-        back: 'ImageResource',
-        right: 'ImageResource',
-        top: 'ImageResource',
-        bottom: 'ImageResource',
-      })
+    c.v('CubicPanoramaFrame', a).A('PanoramaFrame').H({
+      cube: 'ImageResource',
+      stereoCube: 'ImageResource',
+      front: 'ImageResource',
+      left: 'ImageResource',
+      back: 'ImageResource',
+      right: 'ImageResource',
+      top: 'ImageResource',
+      bottom: 'ImageResource',
+    })
     return a
   })
   define('N', ['require', 'hb'], function (a) {
@@ -21895,27 +21887,25 @@
         this.set('rollOverMaps', [])
         this.set('areas', [])
       })
-    a.v('HotspotPanoramaOverlay', b)
-      .A('PanoramaOverlay')
-      .H({
-        centerOverDisplay: 'bool',
-        rollOverDisplay: 'bool',
-        useHandCursor: 'bool',
-        enabled: 'bool',
-        enabledInCardboard: 'bool',
-        enabledInVR: 'bool',
-        enabledInStandard: 'bool',
-        interactionEnabled: 'bool',
-        items:
-          'array[or[FlatHotspotPanoramaOverlayImage, HotspotPanoramaOverlayImage]]',
-        rollOverItems:
-          'array[or[FlatHotspotPanoramaOverlayImage, HotspotPanoramaOverlayImage]]',
-        maps: 'array[or[FlatHotspotPanoramaOverlayMap, HotspotPanoramaOverlayMap]]',
-        rollOverMaps:
-          'array[or[FlatHotspotPanoramaOverlayMap, HotspotPanoramaOverlayMap]]',
-        areas:
-          'array[or[FlatHotspotPanoramaOverlayArea, HotspotPanoramaOverlayArea]]',
-      })
+    a.v('HotspotPanoramaOverlay', b).A('PanoramaOverlay').H({
+      centerOverDisplay: 'bool',
+      rollOverDisplay: 'bool',
+      useHandCursor: 'bool',
+      enabled: 'bool',
+      enabledInCardboard: 'bool',
+      enabledInVR: 'bool',
+      enabledInStandard: 'bool',
+      interactionEnabled: 'bool',
+      items:
+        'array[or[FlatHotspotPanoramaOverlayImage, HotspotPanoramaOverlayImage]]',
+      rollOverItems:
+        'array[or[FlatHotspotPanoramaOverlayImage, HotspotPanoramaOverlayImage]]',
+      maps: 'array[or[FlatHotspotPanoramaOverlayMap, HotspotPanoramaOverlayMap]]',
+      rollOverMaps:
+        'array[or[FlatHotspotPanoramaOverlayMap, HotspotPanoramaOverlayMap]]',
+      areas:
+        'array[or[FlatHotspotPanoramaOverlayArea, HotspotPanoramaOverlayArea]]',
+    })
     b.prototype.set = function (a, b) {
       switch (a) {
         case 'enabledInCardboard':
@@ -21968,15 +21958,13 @@
         this.set('opacity', h !== m ? h : 1)
         j !== m && this.set('timestamp', j)
       })
-    a.v('FlatPanoramaOverlayPlaybackPosition', b)
-      .A('Object')
-      .H({
-        opacity: 'number',
-        pitch: 'number',
-        roll: 'number',
-        timestamp: 'number',
-        yaw: 'number',
-      })
+    a.v('FlatPanoramaOverlayPlaybackPosition', b).A('Object').H({
+      opacity: 'number',
+      pitch: 'number',
+      roll: 'number',
+      timestamp: 'number',
+      yaw: 'number',
+    })
     return b
   })
   define('dJ', ['require', 'gP', 'hg', 'cY'], function (a) {
@@ -21995,19 +21983,17 @@
         this.set('opacity', k !== m ? k : 1)
         l !== m && this.set('timestamp', l)
       })
-    a.v('PanoramaOverlayPlaybackPosition', b)
-      .A('Object')
-      .H({
-        opacity: 'number',
-        yaw: 'number',
-        pitch: 'number',
-        rotationX: 'number',
-        rotationY: 'number',
-        roll: 'number',
-        hfov: 'number',
-        vfov: 'number',
-        timestamp: 'number',
-      })
+    a.v('PanoramaOverlayPlaybackPosition', b).A('Object').H({
+      opacity: 'number',
+      yaw: 'number',
+      pitch: 'number',
+      rotationX: 'number',
+      rotationY: 'number',
+      roll: 'number',
+      hfov: 'number',
+      vfov: 'number',
+      timestamp: 'number',
+    })
     return b
   })
   define('D', ['require', 'gP', 'hg', 'cY'], function (a) {
@@ -22024,17 +22010,15 @@
         d !== m && this.set('hfov', d)
         n !== m && this.set('timestamp', n)
       })
-    a.v('PopupPanoramaOverlayPlaybackPosition', b)
-      .A('Object')
-      .H({
-        yaw: 'number',
-        pitch: 'number',
-        rotationX: 'number',
-        rotationY: 'number',
-        rotationZ: 'number',
-        hfov: 'number',
-        timestamp: 'number',
-      })
+    a.v('PopupPanoramaOverlayPlaybackPosition', b).A('Object').H({
+      yaw: 'number',
+      pitch: 'number',
+      rotationX: 'number',
+      rotationY: 'number',
+      rotationZ: 'number',
+      hfov: 'number',
+      timestamp: 'number',
+    })
     return b
   })
   define('gm', ['require', 'hg', 'cx', 'dJ', 'D'], function (a) {
@@ -22192,29 +22176,27 @@
     a = b.extend(c, function () {
       c.call(this)
     })
-    f.v('GridContainer', a)
-      .A('UIComponent')
-      .H({
-        children: 'array[UIComponent]',
-        contentOpaque: 'bool',
-        childrenInteractionEnabled: 'bool',
-        creationPolicy: 'enum[inAdvance, delayed]',
-        gap: 'number',
-        horizontalAlign: 'enum[center, left, right]',
-        itemHeight: 'or[number, percent]',
-        itemMaxHeight: 'number',
-        itemMaxWidth: 'number',
-        itemMinHeight: 'number',
-        itemMinWidth: 'number',
-        itemWidth: 'or[number, percent]',
-        overflow: 'enum[scroll, hidden, visible]',
-        scrollBarColor: 'color',
-        scrollBarWidth: 'number',
-        scrollBarMargin: 'number',
-        scrollBarOpacity: 'number',
-        scrollBarVisible: 'enum[rollOver, always]',
-        verticalAlign: 'enum[bottom, middle, top]',
-      })
+    f.v('GridContainer', a).A('UIComponent').H({
+      children: 'array[UIComponent]',
+      contentOpaque: 'bool',
+      childrenInteractionEnabled: 'bool',
+      creationPolicy: 'enum[inAdvance, delayed]',
+      gap: 'number',
+      horizontalAlign: 'enum[center, left, right]',
+      itemHeight: 'or[number, percent]',
+      itemMaxHeight: 'number',
+      itemMaxWidth: 'number',
+      itemMinHeight: 'number',
+      itemMinWidth: 'number',
+      itemWidth: 'or[number, percent]',
+      overflow: 'enum[scroll, hidden, visible]',
+      scrollBarColor: 'color',
+      scrollBarWidth: 'number',
+      scrollBarMargin: 'number',
+      scrollBarOpacity: 'number',
+      scrollBarVisible: 'enum[rollOver, always]',
+      verticalAlign: 'enum[bottom, middle, top]',
+    })
     return a
   })
   define(
@@ -22489,24 +22471,22 @@
         f.call(this)
         this.tC = this.Qt = m
       })
-    c.v('Panorama', a)
-      .A('Media')
-      .H({
-        adjacentPanoramas: 'array[AdjacentPanorama]',
-        audios: 'array[PanoramaAudio]',
-        cardboardMenu: 'Menu',
-        flipImageHorizontally: 'bool',
-        frames: 'array[PanoramaFrame]',
-        hfov: 'number',
-        hfovMax: 'number',
-        hfovMin: 'or[number,percent]',
-        mapLocations: 'array[PanoramaMapLocation]',
-        overlays: 'array[PanoramaOverlay]',
-        partial: 'bool',
-        pitch: 'number',
-        vfov: 'number',
-        vrMenu: 'Menu',
-      })
+    c.v('Panorama', a).A('Media').H({
+      adjacentPanoramas: 'array[AdjacentPanorama]',
+      audios: 'array[PanoramaAudio]',
+      cardboardMenu: 'Menu',
+      flipImageHorizontally: 'bool',
+      frames: 'array[PanoramaFrame]',
+      hfov: 'number',
+      hfovMax: 'number',
+      hfovMin: 'or[number,percent]',
+      mapLocations: 'array[PanoramaMapLocation]',
+      overlays: 'array[PanoramaOverlay]',
+      partial: 'bool',
+      pitch: 'number',
+      vfov: 'number',
+      vrMenu: 'Menu',
+    })
     a.prototype.get = function (a, b) {
       switch (a) {
         case 'overlays':
@@ -22594,14 +22574,12 @@
       a = b.extend(f, function () {
         f.call(this)
       })
-    c.v('HDRPanorama', a)
-      .A('Panorama')
-      .H({
-        minimumLuminance: 'number',
-        maximumLuminance: 'number',
-        luminanceChangeTime: 'number',
-        maxLuminanceChangeSpeed: 'number',
-      })
+    c.v('HDRPanorama', a).A('Panorama').H({
+      minimumLuminance: 'number',
+      maximumLuminance: 'number',
+      luminanceChangeTime: 'number',
+      maxLuminanceChangeSpeed: 'number',
+    })
     a.prototype.v0 = function () {
       var a = this.get('frames') || []
       return Math.floor((a.length - 1) / 2)
@@ -22827,17 +22805,15 @@
         c.call(this)
         this.Tn = m
       })
-    f.v('HotspotMapOverlayImage', a)
-      .A('Object')
-      .H({
-        height: 'number',
-        image: 'ImageResource',
-        offsetX: 'number',
-        offsetY: 'number',
-        width: 'number',
-        x: 'number',
-        y: 'number',
-      })
+    f.v('HotspotMapOverlayImage', a).A('Object').H({
+      height: 'number',
+      image: 'ImageResource',
+      offsetX: 'number',
+      offsetY: 'number',
+      width: 'number',
+      x: 'number',
+      y: 'number',
+    })
     a.prototype.getItem = function () {
       return this.Bc()
     }
@@ -22878,17 +22854,15 @@
       a = b.extend(c, function () {
         c.call(this)
       })
-    f.v('HotspotMapOverlayMap', a)
-      .A('Object')
-      .H({
-        height: 'number',
-        image: 'ImageResource',
-        offsetX: 'number',
-        offsetY: 'number',
-        width: 'number',
-        x: 'number',
-        y: 'number',
-      })
+    f.v('HotspotMapOverlayMap', a).A('Object').H({
+      height: 'number',
+      image: 'ImageResource',
+      offsetX: 'number',
+      offsetY: 'number',
+      width: 'number',
+      x: 'number',
+      y: 'number',
+    })
     a.prototype.th = function () {
       return this.get('image') ? e.th(this.get('image')) : q
     }
@@ -23759,17 +23733,15 @@
       b = b.extend(c, function () {
         c.call(this)
       })
-    a.v('HTMLText', b)
-      .A('UIComponent')
-      .H({
-        html: 'string',
-        overflow: 'enum[scroll, hidden, visible]',
-        scrollBarColor: 'color',
-        scrollBarWidth: 'number',
-        scrollBarMargin: 'number',
-        scrollBarOpacity: 'number',
-        scrollBarVisible: 'enum[rollOver, always]',
-      })
+    a.v('HTMLText', b).A('UIComponent').H({
+      html: 'string',
+      overflow: 'enum[scroll, hidden, visible]',
+      scrollBarColor: 'color',
+      scrollBarWidth: 'number',
+      scrollBarMargin: 'number',
+      scrollBarOpacity: 'number',
+      scrollBarVisible: 'enum[rollOver, always]',
+    })
     return b
   })
   define(
@@ -24042,14 +24014,12 @@
         this.set('bleaching', 0)
         this.set('bleachingDistance', 0.4)
       })
-    a.v('LensFlarePanoramaOverlay', b)
-      .A('PanoramaOverlay')
-      .H({
-        yaw: 'number',
-        pitch: 'number',
-        bleaching: 'number',
-        bleachingDistance: 'number',
-      })
+    a.v('LensFlarePanoramaOverlay', b).A('PanoramaOverlay').H({
+      yaw: 'number',
+      pitch: 'number',
+      bleaching: 'number',
+      bleachingDistance: 'number',
+    })
     return b
   })
   define('iB', ['require', 'gP', 'cY', 'fj'], function (a) {
@@ -24106,25 +24076,23 @@
         g.call(this)
         this.Tn = this.bM = m
       })
-    f.v('Map', a)
-      .A('Media')
-      .H({
-        fieldOfViewOverlayInsideColor: 'color',
-        fieldOfViewOverlayInsideOpacity: 'number',
-        fieldOfViewOverlayOutsideColor: 'color',
-        fieldOfViewOverlayOutsideOpacity: 'number',
-        fieldOfViewOverlayRadiusScale: 'number',
-        flipImageHorizontally: 'bool',
-        height: 'number',
-        image: 'ImageResource',
-        initialZoomFactor: 'number',
-        maximumZoomFactor: 'number',
-        minimumZoomFactor: 'number',
-        overlays: 'array[MapOverlay]',
-        scaleMode:
-          'enum[none, fit_inside, fit_outside, fit_to_width, fit_to_height]',
-        width: 'number',
-      })
+    f.v('Map', a).A('Media').H({
+      fieldOfViewOverlayInsideColor: 'color',
+      fieldOfViewOverlayInsideOpacity: 'number',
+      fieldOfViewOverlayOutsideColor: 'color',
+      fieldOfViewOverlayOutsideOpacity: 'number',
+      fieldOfViewOverlayRadiusScale: 'number',
+      flipImageHorizontally: 'bool',
+      height: 'number',
+      image: 'ImageResource',
+      initialZoomFactor: 'number',
+      maximumZoomFactor: 'number',
+      minimumZoomFactor: 'number',
+      overlays: 'array[MapOverlay]',
+      scaleMode:
+        'enum[none, fit_inside, fit_outside, fit_to_width, fit_to_height]',
+      width: 'number',
+    })
     a.prototype.Du = function () {
       return !(!this.get('image') || !h.Du(this.get('image')))
     }
@@ -37714,14 +37682,12 @@
         b !== m && this.set('pitch', b)
         g !== m && this.set('hfov', g)
       })
-    a.v('RotationalCameraPosition', b)
-      .A('Object')
-      .H({
-        stereographicFactor: 'number',
-        yaw: 'number',
-        pitch: 'number',
-        hfov: 'number',
-      })
+    a.v('RotationalCameraPosition', b).A('Object').H({
+      stereographicFactor: 'number',
+      yaw: 'number',
+      pitch: 'number',
+      hfov: 'number',
+    })
     return b
   })
   define('bI', ['require', 'gP', 'ea', 'cY'], function (a) {
@@ -39946,15 +39912,13 @@
     a = a.extend(b, function () {
       b.call(this)
     })
-    c.v('MovementPhotoCamera', a)
-      .A('PhotoCamera')
-      .H({
-        duration: 'number',
-        easing:
-          'enum[linear, quad_in, quad_out, quad_in_out, cubic_in, cubic_out, cubic_in_out, quart_in, quart_out, quart_in_out, quint_in, quint_out, quint_in_out]',
-        initialPosition: 'PhotoCameraPosition',
-        targetPosition: 'PhotoCameraPosition',
-      })
+    c.v('MovementPhotoCamera', a).A('PhotoCamera').H({
+      duration: 'number',
+      easing:
+        'enum[linear, quad_in, quad_out, quad_in_out, cubic_in, cubic_out, cubic_in_out, quart_in, quart_out, quart_in_out, quint_in, quint_out, quint_in_out]',
+      initialPosition: 'PhotoCameraPosition',
+      targetPosition: 'PhotoCameraPosition',
+    })
     return a
   })
   define('eK', ['gP', 'hg', 'cY'], function (a, b, c) {
@@ -40641,15 +40605,13 @@
     a = a.extend(b, function () {
       b.call(this)
     })
-    c.v('PanoramaMapLocation', a)
-      .A('Object')
-      .H({
-        map: 'Map',
-        x: 'number',
-        y: 'number',
-        angle: 'number',
-        visible: 'bool',
-      })
+    c.v('PanoramaMapLocation', a).A('Object').H({
+      map: 'Map',
+      x: 'number',
+      y: 'number',
+      angle: 'number',
+      visible: 'bool',
+    })
     return a
   })
   define('iW', ['require', 'gP', 'hg', 'cY'], function (a) {
@@ -41331,14 +41293,12 @@
       b = b.extend(c, function () {
         c.call(this)
       })
-    a.v('TargetRotationalCameraMovement', b)
-      .A('RotationalCameraMovement')
-      .H({
-        path: 'enum[left, right, shortest, longest]',
-        targetYaw: 'number',
-        targetPitch: 'number',
-        targetHfov: 'number',
-      })
+    a.v('TargetRotationalCameraMovement', b).A('RotationalCameraMovement').H({
+      path: 'enum[left, right, shortest, longest]',
+      targetYaw: 'number',
+      targetPitch: 'number',
+      targetHfov: 'number',
+    })
     return b
   })
   define('z', 'require,gP,iM,ei,bE,dK,cY,ef,hJ,iC,be'.split(','), function (a) {
@@ -44695,13 +44655,11 @@
     a = a.extend(g, function () {
       g.call(this)
     })
-    c.v('PanoramaPlayListItem', a)
-      .A('PlayListItem')
-      .H({
-        media: 'Panorama',
-        camera: 'PanoramaCamera',
-        player: 'PanoramaPlayer',
-      })
+    c.v('PanoramaPlayListItem', a).A('PlayListItem').H({
+      media: 'Panorama',
+      camera: 'PanoramaCamera',
+      player: 'PanoramaPlayer',
+    })
     a.prototype.start = function () {
       g.prototype.start.call(this)
       var a = this.get('player')
@@ -44773,16 +44731,14 @@
         e.call(this)
         this.D = m
       })
-    f.v('Photo', a)
-      .A('Media')
-      .H({
-        audios: 'array[PhotoAudio]',
-        duration: 'number',
-        height: 'number',
-        image: 'ImageResource',
-        width: 'number',
-        flipImageHorizontally: 'bool',
-      })
+    f.v('Photo', a).A('Media').H({
+      audios: 'array[PhotoAudio]',
+      duration: 'number',
+      height: 'number',
+      image: 'ImageResource',
+      width: 'number',
+      flipImageHorizontally: 'bool',
+    })
     a.prototype.Bc = function () {
       if (this.D == m) {
         var a = this.get('image')
@@ -46811,12 +46767,10 @@
     a = a.extend(b, function () {
       b.call(this)
     })
-    c.v('PhotoCamera', a)
-      .A('Object')
-      .H({
-        scaleMode:
-          'enum[none, fit_inside, fit_outside, fit_to_width, fit_to_height]',
-      })
+    c.v('PhotoCamera', a).A('Object').H({
+      scaleMode:
+        'enum[none, fit_inside, fit_outside, fit_to_width, fit_to_height]',
+    })
     return a
   })
   define('cQ', 'require,cA,gP,hg,bE,cY,fF,iM'.split(','), function (a) {
@@ -46954,69 +46908,67 @@
       b = b.extend(c, function () {
         c.call(this)
       })
-    a.v('PlaybackBar', b)
-      .A('UIComponent')
-      .H({
-        barBackgroundColor: 'or[array[color], color]',
-        barBackgroundColorDirection: 'enum[horizontal, vertical]',
-        barBackgroundColorRatios: 'array[number]',
-        barBorderColor: 'color',
-        barBorderRadius: 'number',
-        barBorderSize: 'number',
-        barOpacity: 'number',
-        playheadBackgroundColor: 'or[array[color], color]',
-        playheadBackgroundColorDirection: 'enum[horizontal, vertical]',
-        playheadBackgroundColorRatios: 'array[number]',
-        playheadBorderColor: 'color',
-        playheadBorderRadius: 'number',
-        playheadBorderSize: 'number',
-        playheadOpacity: 'number',
-        playheadWidth: 'or[number, percent]',
-        playheadHeight: 'or[number, percent]',
-        playheadShadow: 'bool',
-        playheadShadowBlurRadius: 'number',
-        playheadShadowColor: 'color',
-        playheadShadowHorizontalLength: 'number',
-        playheadShadowOpacity: 'number',
-        playheadShadowSpread: 'number',
-        playheadShadowVerticalLength: 'number',
-        stepBackgroundColor: 'or[array[color], color]',
-        stepBackgroundColorDirection: 'enum[horizontal, vertical]',
-        stepBackgroundColorRatios: 'array[number]',
-        stepBorderColor: 'color',
-        stepBorderRadius: 'number',
-        stepBorderSize: 'number',
-        stepOpacity: 'number',
-        stepWidth: 'or[number, percent]',
-        stepHeight: 'or[number, percent]',
-        stepShadow: 'bool',
-        stepShadowBlurRadius: 'number',
-        stepShadowColor: 'color',
-        stepShadowHorizontalLength: 'number',
-        stepShadowOpacity: 'number',
-        stepShadowSpread: 'number',
-        stepShadowVerticalLength: 'number',
-        selectedStepBackgroundColor: 'or[array[color], color]',
-        selectedStepBackgroundColorDirection: 'enum[horizontal, vertical]',
-        selectedStepBackgroundColorRatios: 'array[number]',
-        selectedStepBorderColor: 'color',
-        selectedStepBorderRadius: 'number',
-        selectedStepBorderSize: 'number',
-        selectedStepOpacity: 'number',
-        selectedStepWidth: 'or[number, percent]',
-        selectedStepHeight: 'or[number, percent]',
-        selectedStepShadow: 'bool',
-        selectedStepShadowBlurRadius: 'number',
-        selectedStepShadowColor: 'color',
-        selectedStepShadowHorizontalLength: 'number',
-        selectedStepShadowOpacity: 'number',
-        selectedStepShadowSpread: 'number',
-        selectedStepShadowVerticalLength: 'number',
-        position: 'number',
-        duration: 'number',
-        steps: 'number',
-        selectedStep: 'number',
-      })
+    a.v('PlaybackBar', b).A('UIComponent').H({
+      barBackgroundColor: 'or[array[color], color]',
+      barBackgroundColorDirection: 'enum[horizontal, vertical]',
+      barBackgroundColorRatios: 'array[number]',
+      barBorderColor: 'color',
+      barBorderRadius: 'number',
+      barBorderSize: 'number',
+      barOpacity: 'number',
+      playheadBackgroundColor: 'or[array[color], color]',
+      playheadBackgroundColorDirection: 'enum[horizontal, vertical]',
+      playheadBackgroundColorRatios: 'array[number]',
+      playheadBorderColor: 'color',
+      playheadBorderRadius: 'number',
+      playheadBorderSize: 'number',
+      playheadOpacity: 'number',
+      playheadWidth: 'or[number, percent]',
+      playheadHeight: 'or[number, percent]',
+      playheadShadow: 'bool',
+      playheadShadowBlurRadius: 'number',
+      playheadShadowColor: 'color',
+      playheadShadowHorizontalLength: 'number',
+      playheadShadowOpacity: 'number',
+      playheadShadowSpread: 'number',
+      playheadShadowVerticalLength: 'number',
+      stepBackgroundColor: 'or[array[color], color]',
+      stepBackgroundColorDirection: 'enum[horizontal, vertical]',
+      stepBackgroundColorRatios: 'array[number]',
+      stepBorderColor: 'color',
+      stepBorderRadius: 'number',
+      stepBorderSize: 'number',
+      stepOpacity: 'number',
+      stepWidth: 'or[number, percent]',
+      stepHeight: 'or[number, percent]',
+      stepShadow: 'bool',
+      stepShadowBlurRadius: 'number',
+      stepShadowColor: 'color',
+      stepShadowHorizontalLength: 'number',
+      stepShadowOpacity: 'number',
+      stepShadowSpread: 'number',
+      stepShadowVerticalLength: 'number',
+      selectedStepBackgroundColor: 'or[array[color], color]',
+      selectedStepBackgroundColorDirection: 'enum[horizontal, vertical]',
+      selectedStepBackgroundColorRatios: 'array[number]',
+      selectedStepBorderColor: 'color',
+      selectedStepBorderRadius: 'number',
+      selectedStepBorderSize: 'number',
+      selectedStepOpacity: 'number',
+      selectedStepWidth: 'or[number, percent]',
+      selectedStepHeight: 'or[number, percent]',
+      selectedStepShadow: 'bool',
+      selectedStepShadowBlurRadius: 'number',
+      selectedStepShadowColor: 'color',
+      selectedStepShadowHorizontalLength: 'number',
+      selectedStepShadowOpacity: 'number',
+      selectedStepShadowSpread: 'number',
+      selectedStepShadowVerticalLength: 'number',
+      position: 'number',
+      duration: 'number',
+      steps: 'number',
+      selectedStep: 'number',
+    })
     return b
   })
   define('hl', ['require'], function () {
@@ -49742,17 +49694,15 @@
     a = b.extend(c, function () {
       c.call(this)
     })
-    f.v('ProgressBar', a)
-      .A('UIComponent')
-      .H({
-        barBackgroundColor: 'or[array[color], color]',
-        barBackgroundColorDirection: 'enum[horizontal, vertical]',
-        barBackgroundColorRatios: 'array[number]',
-        barBorderColor: 'color',
-        barBorderRadius: 'number',
-        barBorderSize: 'number',
-        barOpacity: 'number',
-      })
+    f.v('ProgressBar', a).A('UIComponent').H({
+      barBackgroundColor: 'or[array[color], color]',
+      barBackgroundColorDirection: 'enum[horizontal, vertical]',
+      barBackgroundColorRatios: 'array[number]',
+      barBorderColor: 'color',
+      barBorderRadius: 'number',
+      barBorderSize: 'number',
+      barOpacity: 'number',
+    })
     return a
   })
   define('iU', ['require', 'gP', 'hg', 'cY', 'ea'], function (a) {
@@ -49764,21 +49714,19 @@
         c.call(this)
         this.set('initialPosition', new e())
       })
-    f.v('RotationalCamera', a)
-      .A('Object')
-      .H({
-        displayOriginPosition: 'RotationalCameraDisplayPosition',
-        displayMovements: 'array[TargetRotationalCameraDisplayMovement]',
-        initialPosition: 'RotationalCameraPosition',
-        initialSequence: 'RotationalCameraSequence',
-        idleSequence: 'RotationalCameraSequence',
-        sequences: 'array[RotationalCameraSequence]',
-        timeToIdle: 'number',
-        manualRotationSpeed: 'number',
-        manualZoomSpeed: 'number',
-        automaticRotationSpeed: 'number',
-        automaticZoomSpeed: 'number',
-      })
+    f.v('RotationalCamera', a).A('Object').H({
+      displayOriginPosition: 'RotationalCameraDisplayPosition',
+      displayMovements: 'array[TargetRotationalCameraDisplayMovement]',
+      initialPosition: 'RotationalCameraPosition',
+      initialSequence: 'RotationalCameraSequence',
+      idleSequence: 'RotationalCameraSequence',
+      sequences: 'array[RotationalCameraSequence]',
+      timeToIdle: 'number',
+      manualRotationSpeed: 'number',
+      manualZoomSpeed: 'number',
+      automaticRotationSpeed: 'number',
+      automaticZoomSpeed: 'number',
+    })
     return a
   })
   define('de', ['require', 'gP', 'hg', 'cY', 'iM'], function (a) {
@@ -49942,12 +49890,10 @@
       a = b.extend(f, function () {
         f.call(this)
       })
-    c.v('SphericPanoramaFrame', a)
-      .A('PanoramaFrame')
-      .H({
-        sphere: 'or[ImageResource, Video360Resource]',
-        stereoSphere: 'or[ImageResource]',
-      })
+    c.v('SphericPanoramaFrame', a).A('PanoramaFrame').H({
+      sphere: 'or[ImageResource, Video360Resource]',
+      stereoSphere: 'or[ImageResource]',
+    })
     a.prototype.Aha = function () {
       var a = this.get('sphere')
       return a && c.jb('Video360Resource', a)
@@ -53365,14 +53311,12 @@
     a = a.extend(f, function () {
       f.call(this)
     })
-    b.v('Video360PlayListItem', a)
-      .A('PlayListItem')
-      .H({
-        media: 'Video360',
-        camera: 'RotationalCamera',
-        player: 'PanoramaPlayer',
-        startTime: 'number',
-      })
+    b.v('Video360PlayListItem', a).A('PlayListItem').H({
+      media: 'Video360',
+      camera: 'RotationalCamera',
+      player: 'PanoramaPlayer',
+      startTime: 'number',
+    })
     a.prototype.start = function () {
       f.prototype.start.call(this)
       var a = this.get('player')
