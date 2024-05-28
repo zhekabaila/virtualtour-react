@@ -17,7 +17,7 @@ const Tour = () => {
               Mulai tur virtual-mu untuk menjelajahi SMKN 1 Majalengka dengan
               klik tombol di bawah ini.
             </p>
-            <a href="https://tour-file.vercel.app/" target="_blank">
+            <a href="/tours/gerbang" target="_blank">
               <div className="text-xs lg:text-base text-primary font-semibold bg-white px-4 lg:px-5 py-1.5 lg:py-1 rounded-md mt-6">
                 Mulai Jelajahi
               </div>

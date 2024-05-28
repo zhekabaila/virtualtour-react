@@ -9,7 +9,7 @@ const Hero = () => {
           <p className="text-center text-xs lg:text-base text-white font-extralight mt-2">
             Are you ready for the fun virtual tour experience?
           </p>
-          <a href="https://tour-file.vercel.app/" target="_blank">
+          <a href="/tours/gerbang" target="_blank">
             <div className="text-xs lg:text-base text-white font-semibold bg-primary px-4 lg:px-5 py-1.5 lg:py-1 rounded-md mt-6">
               START NOW!
             </div>
