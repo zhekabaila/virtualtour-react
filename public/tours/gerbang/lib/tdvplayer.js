@@ -7441,10 +7441,10 @@
     function b() {
       this.Oh = {}
       this.Oh[b.SCRIPT_URL] = []
-      this.Oh[b.THREE_JS_WEBGL_URL] = '/lib/ThreeWebGL.js'
-      this.Oh[b.WEBVR_POLYFILL_URL] = '/lib/WebVRPolyfill.js'
-      this.Oh[b.HLS_URL] = '/lib/Hls.js'
-      this.Oh[b.CURSORS_DIR_URL] = '/lib/cursors'
+      this.Oh[b.THREE_JS_WEBGL_URL] = './lib/ThreeWebGL.js'
+      this.Oh[b.WEBVR_POLYFILL_URL] = './lib/WebVRPolyfill.js'
+      this.Oh[b.HLS_URL] = './lib/Hls.js'
+      this.Oh[b.CURSORS_DIR_URL] = './lib/cursors'
       this.Oh[b.SERVICE_WORKER_URL] = 'tdvplayersw.js'
       this.Oh[b.BACKGROUND_PRELOAD_ENABLED] = m
     }
