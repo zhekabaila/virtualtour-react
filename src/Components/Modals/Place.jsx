@@ -47,25 +47,25 @@ export default function Place({
                       className="group-hover:scale-110 transition-all ease-in-out duration-150"
                     />
                   </button>
-                  <div className="flex gap-x-10">
+                  <div className="flex flex-col lg:flex-row gap-x-10">
                     <img
                       src={image}
                       alt={`${title} icon`}
-                      className="w-[220px] h-[294.5px] rounded-xl object-cover object-center"
+                      className="w-full lg:w-[220px] h-auto lg:h-[294.5px] rounded-xl object-cover object-center"
                     />
                     <div>
                       <DialogTitle
                         as="h3"
-                        className="text-lg font-semibold text-primary"
+                        className="text-base lg:text-lg font-semibold text-primary mt-7 lg:mt-0"
                       >
                         {title}
                       </DialogTitle>
                       <p
-                        className="mt-6 text-base text-black"
+                        className="mt-6 text-sm lg:text-base text-black"
                         dangerouslySetInnerHTML={{ __html: description }}
                       />
                       <a href={link} target="_blank" className="flex mt-10">
-                        <p className="px-16 py-1.5 rounded-full bg-primary text-white text-base font-semibold">
+                        <p className="px-16 py-1.5 rounded-full bg-primary text-white text-sm lg:text-base font-semibold">
                           JELAJAHI
                         </p>
                       </a>

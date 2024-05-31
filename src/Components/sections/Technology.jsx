@@ -13,7 +13,7 @@ const Technology = () => {
         {technology.map((item, index) => (
           <li key={index}>
             <img
-              src={`technology/${item.icon}`}
+              src={`images/technology/${item.icon}`}
               alt={item.title}
               className={`${
                 item.title === 'Tailwindcss'
