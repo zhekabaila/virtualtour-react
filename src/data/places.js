@@ -29,7 +29,7 @@ export const places = [
     description:
       'Perpustakaan "Wacana Teknologi" di SMKN 1 Majalengka adalah tempat yang nyaman dan menyenangkan untuk belajar dan bersantai. Di sini, tersedia berbagai macam buku untuk memenuhi berbagai minat dan kebutuhan, mulai dari buku pelajaran hingga novel dan ensiklopedia. Selain itu, kamu juga bisa menemukan tempat duduk santai yang nyaman untuk menikmati bacaan favoritmu. Ruang belajar yang tenang dilengkapi dengan meja dan kursi yang nyaman tersedia bagi yang ingin fokus belajar. Di samping itu, beberapa komputer tersedia untuk browsing internet atau mengerjakan tugas yang memerlukan akses digital. Semua ruangan dilengkapi dengan AC, sehingga kamu bisa tetap nyaman bahkan saat cuaca panas. Dengan suasana yang hangat dan fasilitas yang lengkap, Wacana Teknologi adalah tempat yang sempurna untuk meningkatkan pengetahuan dan keterampilanmu.',
     image: 'images/places/perpus.jpg',
-    link: '/tour/main',
+    link: '',
   },
   {
     id: 5,
@@ -53,7 +53,7 @@ export const places = [
     description:
       'Lapangan parkir di SMKN 1 Majalengka adalah fasilitas yang luas dan fungsional, dirancang untuk menampung ratusan motor siswa. Dengan area yang lapang, parkir ini memberikan ruang yang memadai bagi siswa untuk memarkirkan kendaraan mereka dengan aman dan nyaman. Salah satu keutamaan dari lapangan parkir ini adalah penutup atap yang melindungi motor dari panas matahari, sehingga menjaga kendaraan tetap sejuk dan terlindungi dari cuaca eksternal. Dengan demikian, parkir di SMKN 1 Majalengka menjadi fasilitas yang sangat diperlukan bagi mobilitas siswa dan menjadikannya sebagai bagian integral dari infrastruktur sekolah.',
     image: 'images/places/parkiran.jpg',
-    link: '/tour/main',
+    link: '',
   },
   {
     id: 8,

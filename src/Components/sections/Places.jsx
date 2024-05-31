@@ -1,10 +1,12 @@
 import 'swiper/css'
 import 'swiper/css/navigation'
-import { Navigation, Autoplay } from 'swiper/modules'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { places } from '../../data/places'
 import { useState } from 'react'
 import Place from '../Modals/Place'
+import { places } from '../../data/places'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Autoplay } from 'swiper/modules'
+import 'react-lazy-load-image-component/src/effects/blur.css'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const Places = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -51,9 +53,12 @@ const Places = () => {
                 </p>
               </div>
               <div>
-                <img
-                  src={item.image}
-                  alt="card"
+                <LazyLoadImage
+                  alt={`${item.title} image`}
+                  src={item.image} // use normal <img> attributes as props
+                  height={294.5}
+                  width={220}
+                  effect="blur"
                   className="object-center object-cover rounded-xl group-hover:scale-110 transition-all ease-in-out duration-300"
                 />
               </div>

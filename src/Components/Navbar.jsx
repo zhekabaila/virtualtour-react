@@ -32,6 +32,7 @@ const Navbar = () => {
             <img
               src="/images/stemanika.png"
               alt="Stemanika Logo"
+              loading="lazy"
               className="aspect-square size-[35px] lg:size-[45px]"
             />
             <div>
@@ -48,7 +49,11 @@ const Navbar = () => {
             className="block lg:hidden"
             onClick={() => setActive(true)}
           >
-            <img src="/icons/burger_white.svg" alt="" />
+            <img
+              src="/icons/burger_white.svg"
+              alt="burger icon"
+              loading="lazy"
+            />
           </button>
           <ul className="hidden lg:flex items-center gap-x-12">
             <li>
@@ -86,6 +91,7 @@ const Navbar = () => {
             <img
               src="/images/stemanika.png"
               alt="Stemanika Logo"
+              loading="lazy"
               className="aspect-square size-[35px] lg:size-[45px]"
             />
             <div>
@@ -98,7 +104,7 @@ const Navbar = () => {
             </div>
           </a>
           <button type="button" onClick={() => setActive(false)}>
-            <img src="/icons/close.svg" alt="close icon" />
+            <img src="/icons/close.svg" alt="close icon" loading="lazy" />
           </button>
         </div>
         <div className="flex items-center justify-center h-full">
@@ -114,20 +120,20 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#tour"
-                onClick={() => setActive(false)}
-                className="text-white text-2xl font-semibold hover:text-black hover:underline transition-all duration-100 ease-in-out"
-              >
-                Tour
-              </a>
-            </li>
-            <li>
-              <a
                 href="#places"
                 onClick={() => setActive(false)}
                 className="text-white text-2xl font-semibold hover:text-black hover:underline transition-all duration-100 ease-in-out"
               >
                 Places
+              </a>
+            </li>
+            <li>
+              <a
+                href="#tour"
+                onClick={() => setActive(false)}
+                className="text-white text-2xl font-semibold hover:text-black hover:underline transition-all duration-100 ease-in-out"
+              >
+                Tour
               </a>
             </li>
             <li>

@@ -12,7 +12,8 @@ const Footer = () => {
             >
               <img
                 src="/icons/phone.png"
-                alt=""
+                alt="phone icon"
+                loading="lazy"
                 className="aspect-square size-4"
               />
               <p className="text-xs lg:text-sm text-black font-medium">
@@ -28,7 +29,8 @@ const Footer = () => {
             >
               <img
                 src="/icons/mail.png"
-                alt=""
+                alt="main icon"
+                loading="lazy"
                 className="aspect-square size-4"
               />
               <p className="text-xs lg:text-sm text-black font-medium">
@@ -44,7 +46,8 @@ const Footer = () => {
             >
               <img
                 src="/icons/instagram.png"
-                alt=""
+                alt="instagram icon"
+                loading="lazy"
                 className="aspect-square size-4"
               />
               <p className="text-xs lg:text-sm text-black font-medium">

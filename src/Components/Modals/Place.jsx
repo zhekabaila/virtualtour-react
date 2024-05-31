@@ -6,6 +6,8 @@ import {
   TransitionChild,
 } from '@headlessui/react'
 import PropTypes from 'prop-types'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css'
 
 export default function Place({
   title,
@@ -48,9 +50,10 @@ export default function Place({
                     />
                   </button>
                   <div className="flex flex-col lg:flex-row gap-x-10">
-                    <img
+                    <LazyLoadImage
                       src={image}
                       alt={`${title} icon`}
+                      effect="blur"
                       className="w-full lg:w-[220px] h-auto lg:h-[294.5px] rounded-xl object-cover object-center"
                     />
                     <div>
@@ -64,11 +67,13 @@ export default function Place({
                         className="mt-6 text-sm lg:text-base text-black"
                         dangerouslySetInnerHTML={{ __html: description }}
                       />
-                      <a href={link} target="_blank" className="flex mt-10">
-                        <p className="px-16 py-1.5 rounded-full bg-primary text-white text-sm lg:text-base font-semibold">
-                          JELAJAHI
-                        </p>
-                      </a>
+                      {link !== '' && (
+                        <a href={link} target="_blank" className="flex mt-10">
+                          <p className="px-16 py-1.5 rounded-full bg-primary text-white text-sm lg:text-base font-semibold">
+                            JELAJAHI
+                          </p>
+                        </a>
+                      )}
                     </div>
                   </div>
                 </div>

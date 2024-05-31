@@ -1,18 +1,33 @@
-import Tour from '../Components/sections/Tour'
-import Hero from '../Components/sections/Hero'
+import { lazy } from 'react'
 import Container from '../Components/Container'
-import About from '../Components/sections/About'
 import Places from '../Components/sections/Places'
-import Technology from '../Components/sections/Technology'
+import { LazyLoadComponent } from 'react-lazy-load-image-component'
+
+const Hero = lazy(() => import('../Components/sections/Hero'))
+const About = lazy(() => import('../Components/sections/About'))
+const Technology = lazy(() => import('../Components/sections/Technology'))
+const Tour = lazy(() => import('../Components/sections/Tour'))
 
 const Home = () => {
   return (
     <Container>
-      <Hero />
-      <About />
-      <Technology />
+      <LazyLoadComponent>
+        <Hero />
+      </LazyLoadComponent>
+
+      <LazyLoadComponent>
+        <About />
+      </LazyLoadComponent>
+
+      <LazyLoadComponent>
+        <Technology />
+      </LazyLoadComponent>
+
       <Places />
-      <Tour />
+
+      <LazyLoadComponent>
+        <Tour />
+      </LazyLoadComponent>
     </Container>
   )
 }

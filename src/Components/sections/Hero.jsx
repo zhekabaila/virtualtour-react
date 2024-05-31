@@ -2,7 +2,7 @@ const Hero = () => {
   return (
     <section id="hero">
       <div className="flex items-center justify-center bg-[url('/images/bangunan_utama.png')] bg-left-top lg:bg-center bg-no-repeat bg-cover h-screen">
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center px-4 lg:px-0">
           <h2 className="text-center text-xl lg:text-3xl text-white font-semibold">
             Stemanika Virtual Tour
           </h2>
