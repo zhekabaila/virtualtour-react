@@ -4,9 +4,9 @@ import Places from '../Components/sections/Places'
 import { LazyLoadComponent } from 'react-lazy-load-image-component'
 
 const Hero = lazy(() => import('../Components/sections/Hero'))
+const Tour = lazy(() => import('../Components/sections/Tour'))
 const About = lazy(() => import('../Components/sections/About'))
 const Technology = lazy(() => import('../Components/sections/Technology'))
-const Tour = lazy(() => import('../Components/sections/Tour'))
 
 const Home = () => {
   return (
